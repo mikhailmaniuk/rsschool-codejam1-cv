@@ -1,0 +1,53 @@
+@import './_vars';
+
+.skill {
+    &-title {
+        font-weight: 400;
+        // font-size: @fontSize + 2px;
+    }
+
+    &-value {
+        background-color: #3a3a3a;
+        max-width: 320px;
+        width: 100%;
+        height: 4px;
+        border-radius: 5px;
+        position: relative;
+    }
+
+    &-trigger {
+        position: absolute;
+        width: 60%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        border-radius: 5px;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: -2px;
+            right: -1px;
+            width: 8px;
+            height: 8px;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+    }
+
+    &-list {
+        list-style: none;
+        padding-left: 0;
+
+        &-item {
+            padding-left: 35px;
+            margin-bottom: 10px;
+            position: relative;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
